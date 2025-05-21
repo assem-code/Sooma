@@ -1,0 +1,14 @@
+telebot
+PyPDF2
+google-generativeai
+matplotlib
+numpy
+sympy
+pdf2image[poppler,pil]
+pytesseract
+python-docx
+Pillow
+requests
+python-telegram-bot
+flask
+pyTelegramBotAPI
