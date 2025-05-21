@@ -30,8 +30,13 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 # ==============================================================================
 
 # --- Paths for Tesseract and Poppler ---
-pytesseract.pytesseract.tesseract_cmd = "/nix/store/44vcjbcy1p2yhc974bcw250k2r5x5cpa-tesseract-5.3.4/bin/tesseract" # تأكد من هذا المسار
-poppler_path = "/nix/store/1f2vbia1rg1rh5cs0ii49v3hln9i36rv-poppler-utils-24.02.0/bin/" # هذا هو المسار الذي أكدته
+
+# المسار الصحيح لتثبيت tesseract في Docker
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
+
+# المسار الصحيح لأدوات poppler في Docker
+poppler_path = "/usr/bin/"
+# هذا هو المسار الذي أكدته
 # For Linux; adjust for other OS if needed
 
 # --- API Keys ---
